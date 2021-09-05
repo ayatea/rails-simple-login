@@ -13,5 +13,15 @@ module RailsSimpleLogin
 
     # Railsアプリのデフォルトタイムゾーン
     config.time_zone = 'Tokyo'
+
+    # SCSS、CoffeeScript、ControllerとViewのSpecファイルを自動生成しない設定
+    # テストフレームワークをRspecに変更
+    config.generators do |g|
+      g.helper false
+      g.assets false
+      g.test_framework :rspec
+      g.controller_specs false
+      g.view_specs false
+    end
   end
 end
