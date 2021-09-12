@@ -12,4 +12,10 @@
 #
 class User < ApplicationRecord
   acts_as_paranoid
+
+  # パスワードの設定時に暗号化を行う
+  # @param [String] password 平文パスワード
+  def password=(password)
+    self.hashed_password = BCrypt::Password.create(password)
+  end
 end
