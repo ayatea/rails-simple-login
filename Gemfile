@@ -61,6 +61,7 @@ group :test do
   gem 'webdrivers'
   # Use Rspec
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
   # Use Factory for test
   gem 'factory_bot_rails'
 end
