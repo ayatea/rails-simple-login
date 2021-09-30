@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+@import 'colors';
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -6,8 +7,8 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 50px;
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: $gentle_turquoise;
+  background: -webkit-linear-gradient(top left, $gentle_turquoise 0%, $great_light_green 100%);
+  background: -moz-linear-gradient(top left, $gentle_turquoise 0%, $great_light_green 100%);
+  background: -o-linear-gradient(top left, $gentle_turquoise 0%, $great_light_green 100%);
 }
