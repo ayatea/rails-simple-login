@@ -1,0 +1,75 @@
+@import 'colors';
+
+// ログインフォームのスタイル
+html .login-wrap {
+  position: relative;
+  margin: 0 auto;
+  background: $purity_white;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px $dark_gray;
+  padding: 15px;
+  margin-top: 100px;
+  // 表題のスタイル
+  h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 2em;
+    margin-top: 10px;
+    color: $greyish_blue;
+  }
+  // フォーム部のスタイル
+  .form {
+    padding-top: 20px;
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 25px;
+      height: 40px;
+      border-radius: 5px;
+      outline: 0;
+    }
+    input[type="text"],
+    input[type="password"] {
+      border: 1px solid $calm_light_gray;
+      padding: 0 0 0 10px;
+      font-size: 14px;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border: 1px solid $bright_blue;
+    }
+    input[type="submit"] {
+      background: $bright_red;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 200;
+      cursor: pointer;
+      transition: box-shadow .4s ease;
+    }
+    a {
+      text-align: center;
+      font-size: 10px;
+      color: $bright_blue;
+      p {
+        padding-bottom: 10px;
+      }
+    }
+    input[type="submit"]:hover {
+      box-shadow: 1px 1px 5px $deep_gray;
+    }
+    input[type="submit"]:active {
+      box-shadow: 1px 1px 7px $dark_black;
+    }
+    div {
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 25px;
+      border-radius: 5px;
+      outline: 0;
+    }
+  }
+}

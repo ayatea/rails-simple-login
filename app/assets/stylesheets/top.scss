@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+@import 'colors';
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  background: $gentle_turquoise;
+  background: -webkit-linear-gradient(top left, $gentle_turquoise 0%, $great_light_green 100%);
+  background: -moz-linear-gradient(top left, $gentle_turquoise 0%, $great_light_green 100%);
+  background: -o-linear-gradient(top left, $gentle_turquoise 0%, $great_light_green 100%);
+}
