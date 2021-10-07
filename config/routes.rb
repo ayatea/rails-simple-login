@@ -2,6 +2,6 @@
 #
 
 Rails.application.routes.draw do
-  #root 'top#index'
-  root 'sessions#new'
+  root 'top#index'
+  get 'login' => 'sessions#new', as: :login
 end
