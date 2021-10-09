@@ -1,6 +1,8 @@
 class BaseController < ApplicationController
   before_action :require_login
 
+  private
+
   # ユーザーがログインをしていない場合、ログイン画面へ遷移する
   def require_login
     redirect_to :login unless logged_in?
