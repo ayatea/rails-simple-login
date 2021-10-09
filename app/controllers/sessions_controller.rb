@@ -1,5 +1,12 @@
 class SessionsController < BaseController
+  skip_before_action :require_login
+
   def new
-    # TODO: ログイン認証状況によって処理を切り分ける
+    if logged_in?
+      redirect_to :root
+    else
+      @form = LoginForm.new
+      render action: 'new'
+    end
   end
 end
