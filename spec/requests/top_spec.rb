@@ -5,7 +5,7 @@ RSpec.describe 'Top', type: :request do
 
   let(:user) { create(:user) }
 
-  describe 'GET /index' do
+  describe 'GET /' do
     describe 'ログイン済みの場合' do
       it 'レスポンスステータス200が取得されること' do
         login(user, 'password')
