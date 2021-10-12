@@ -3,10 +3,15 @@
 <% end %>
 <div class="login-wrap">
   <h2>Login</h2>
-  <form class="form" id="new_login_form" action="/" accept-charset="UTF-8" method="post">
-    <input required="required" placeholder="ログインID" type="text" name="login_form[login_id]" id="login_form_login_id">
-    <input required="required" placeholder="パスワード" type="password" name="login_form[password]" id="login_form_password">
-    <input type="submit" name="commit" value="ログイン" data-disable-with="ログイン">
+
+  <%= form_for @form, url: :session, html: { class: "form" } do |f| %>
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value.html_safe, class: "alert alert-#{key}") %>
+    <% end %>
+    <%= f.text_field :login_id, required: true, :placeholder => "ログインID" %>
+    <%= f.password_field :password, required: true, :placeholder => "パスワード" %>
+    <%= f.submit 'ログイン' %>
+    <% # TODO: アカウントを忘れた場合の処理 %>
     <a href="#"> <p>ログイン情報を忘れたら?</p></a>
-  </form>
+  <% end %>
 </div>
