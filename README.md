@@ -1,24 +1,56 @@
-# README
+# rails-simple-login
+Ruby on Rails6.1系で作成されたシンプルなログイン認証機能
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### ログイン画面
+![](images/image_login.png)
 
-Things you may want to cover:
+### Welcome画面
+![](images/image_welcome.png)
 
-* Ruby version
+## Ruby バージョン
+* 2.6.0
 
-* System dependencies
+## Railsバージョン
+* 6.1.4
 
-* Configuration
+## 静的コードチェックコマンド
 
-* Database creation
+```
+bundle exec rubocop
+```
 
-* Database initialization
+## Rspecテストコマンド
 
-* How to run the test suite
+```
+bundle exec rspec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## データベース生成コマンド
 
-* Deployment instructions
+```
+budnle exec rails db:create
+```
 
-* ...
+## マイグレーションの実行コマンド
+
+```
+bundle exec rails db:migrate
+```
+
+## Seedデータの投入コマンド
+
+```
+bundle exec rails db:seed
+```
+
+## アプリケーションの起動コマンド
+
+```
+bundle exec rails s
+```
+
+## アプリケーションへのアクセスURL
+
+```
+http://localhost:3000/
+```
